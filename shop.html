@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- This is the head. The head contains the title and the viewport scaling code -->
+    <title>Acadia Park Equipment Company</title> <!--  This is the title. The title controls what characters are seen on the website tab in a browser.  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- This is the code that controls the scaling of the webpage. It is particularly helpful for mobile devices  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!--  This is the body. The body contains the clients logo, navigation buttons to the other parts of the website.  -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Locations</a>
+        <a href=shop.html class="active">Shop</a>
+        <a href="#contact">Contact Us</a>
+        <a href=products.html>Products</a>
+        <a href=about-us.html>About Us</a>
+        <a href=index.html>Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" onclick="hideshow()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="navlogo" id="hidelogo">
+            <img src="images/acadia-logo-alternate.png" alt="Acadia Logo">
+        </div>
+    </div>
+
+    <div class='container'>
+        <!--  This tells the CSS how to style all elements within this element.  -->
+        <div class='text-block-background'>
+            <!--  This tells the CSS to put a semi-transparent, white box with a shadow behind anything inside this style element.  -->
+            <div class='header-text'>
+                <h1>Shop</h1>
+            </div>
+            
+            <div class="responsive-shop">
+  <div class="gallery-shop">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="images/tent-small.jpg" alt="Small Tent" width="600" height="400">
+    </a>
+    <div class="desc-shop">$54.99 1 Person Tent</div>
+  </div>
+</div>
+            
+            <div class="responsive-shop">
+  <div class="gallery-shop">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="images/tent-medium.jpg" alt="Medium Tent" width="600" height="400">
+    </a>
+    <div class="desc-shop">$84.99 3 Person Tent</div>
+  </div>
+</div>
+
+
+<div class="responsive-shop">
+  <div class="gallery-shop">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="images/tent-large.jpg" alt="Large Tent" width="600" height="400">
+    </a>
+    <div class="desc-shop">$199.99 6 Person Tent</div>
+  </div>
+</div>
+
+<div class="responsive-shop">
+  <div class="gallery-shop">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="images/backpack-shop.jpg" alt="Backpack" width="600" height="400">
+    </a>
+    <div class="desc-shop">$29.99 Backpack</div>
+  </div>
+</div>
+            <div class="responsive-shop">
+  <div class="gallery-shop">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="images/jacket-shop.jpg" alt="Jackets" width="600" height="400">
+    </a>
+    <div class="desc-shop">$44.99 Jacket</div>
+  </div>
+</div>
+            <div class="responsive-shop">
+  <div class="gallery-shop">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="images/pants-shop.jpg" alt="Pants" width="600" height="400">
+    </a>
+    <div class="desc-shop">$24.99 Outdoor Pants</div>
+  </div>
+</div>
+            <div class="clearfix-shop"></div>
+        </div>
+    </div>
+        
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function hideshow() {
+            var x = document.getElementById("hidelogo");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

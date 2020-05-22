@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- This is the head. The head contains the title and the viewport scaling code -->
+    <title>Acadia Park Equipment Company</title> <!--  This is the title. The title controls what characters are seen on the website tab in a browser.  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- This is the code that controls the scaling of the webpage. It is particularly helpful for mobile devices  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!--  This is the body. The body contains the clients logo, navigation buttons to the other parts of the website.  -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Locations</a>
+        <a href=shop.html>Shop</a>
+        <a href="#contact">Contact Us</a>
+        <a href=products.html>Products</a>
+        <a href=about-us.html class="active">About Us</a>
+        <a href=index.html>Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" onclick="hideshow()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="navlogo" id="hidelogo">
+            <img src="images/acadia-logo-alternate.png" alt="Acadia Logo">
+        </div>
+    </div>
+
+    <div class='container'>
+        <!--  This tells the CSS how to style all elements within this element.  -->
+        <div class='text-block-background'>
+            <!--  This tells the CSS to put a semi-transparent, white box with a shadow behind anything inside this style element.  -->
+            <div class='header-text'>
+                <!--  This is used to style header.  -->
+                <h1>About Us</h1>
+            </div>
+            <p class="page-text">Acadia Park Equipment Co. was founded by a brother and sister who were inspired by their love of the outdoors. They decided to start Acadia Outdoor Equipment Co. in response to all of the overpriced outdoor products in the big box retail stores, and sought to create high-quality products at a price anyone can afford. The company’s mission is to spread the love and appreciation of the outdoors to all of its customers and beyond.</p>
+            <div class="header-text">
+                <h1>Our Vision</h1>
+            </div>
+            <p class="page-text">As Acadia Park Equipment Co. moves towards its goal of making it affordable for outdoor enthusiasts to enjoy nature, we will support organizations whose main efforts involve research to continue preservation efforts towards the environment. We regularly encourage employees to engage in preservation and clean-up efforts to help the environment.</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function hideshow() {
+            var x = document.getElementById("hidelogo");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

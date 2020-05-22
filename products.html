@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- This is the head. The head contains the title and the viewport scaling code -->
+    <title>Acadia Park Equipment Company</title> <!--  This is the title. The title controls what characters are seen on the website tab in a browser.  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- This is the code that controls the scaling of the webpage. It is particularly helpful for mobile devices  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!--  This is the body. The body contains the clients logo, navigation buttons to the other parts of the website.  -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Locations</a>
+        <a href=shop.html>Shop</a>
+        <a href="#contact">Contact Us</a>
+        <a href=products.html class="active">Products</a>
+        <a href=about-us.html>About Us</a>
+        <a href=index.html>Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" onclick="hideshow()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="navlogo" id="hidelogo">
+            <img src="images/acadia-logo-alternate.png" alt="Acadia Logo">
+        </div>
+    </div>
+
+    <div class='container'>
+        <!--  This tells the CSS how to style all elements within this element.  -->
+        <div class='text-block-background'>
+            <!--  This tells the CSS to put a semi-transparent, white box with a shadow behind anything inside this style element.  -->
+            <div class='header-text'>
+                <!--  This is used to style header.  -->
+                <h1>Products</h1>
+            </div>
+            <p class="page-products">At Acadia Park Equipment Co., we provide a line of premium products at prices that fit anyone’s budget. Using only high-grade materials in all of our products, we provide outdoor wear that is first in class for quality while bypassing the hefty price tag of other brands.</p>
+            <div class="container1">
+                <div class="responsive-products">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="images/products-backpack.jpg" alt="Image of an Acadia Jacket" width="900" height="700">
+                    </a>
+                </div>
+                </div>
+                <div class="responsive-text">
+                <p class="page-products">Bring everything you need for an action-packed day in any of our backpacks. Our packs are constructed of hyper-durable nylon and crafted with a haul handle on the exterior for quick grab-and-go. Features include fleece-lined front organizational compartments, a larger main compartment, and a dedicated mobile-office for your laptop, tablet and documents.</p>
+                </div>
+            </div>
+            <div class='container1'>
+                <div class="responsive-products">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="images/products-pants.jpg" alt="Image of an Acadia Pair of Pants" width="900" height="700">
+                    </a>
+                </div>
+                </div>
+                <div class="responsive-text">
+            <p class="page-products">Designed to maximize your mobility, Acadia’s line of specially crafted outdoor pants are made with durable yarns, feature articulated knees for freedom of movement, and are completely impervious to rain, sleet and snow, while allowing perspiration to pass through from within. Our design is durable, moisture-wicking, breathable, and wrinkle free. <br> <br></p>
+            </div>
+            </div>
+            <div class='container1'>
+                <div class="responsive-products">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="images/products-jacket.jpg" alt="Acadia Park Equipment Company" width="900" height="700">
+                    </a>
+                </div>
+                </div>
+                <div class="responsive-text">
+            <p class="page-products">Acadia’s brand of jackets keeps you warm on your coldest and wettest adventure. With high loftiness, moisture resistance, and the ability to regain loft after compression, the fill power of our specially packed goose down provides excellent warmth-to-weight ratio and compressibility, both critical to retain warmth and furnish comfort. <br><br></p>
+            </div>
+            </div>
+            <div class='container1'>
+                <div class="responsive-products">
+                <div class="gallery">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="images/products-tent.jpg" alt="Acadia Park Equipment Company" width="900" height="700">
+                    </a>
+                </div>
+                </div>
+                <div class="responsive-text">
+            <p class="page-products">Take an Acadia tent as your base of operations on your next outdoor getaway! Our durable line of tents ranges from personal, single sleeper enclosures, to tents with room for six. With high ceilings, large windows for expansive views, exceptional airflow, and a design that packs into a duffel-bag-style stuffsack for easy transport, our tents are perfect for any adventure you have planned.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function hideshow() {
+            var x = document.getElementById("hidelogo");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
