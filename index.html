@@ -2,7 +2,6 @@
 <html lang='en'>
 
 <head>
-    <!-- This is the head. The head contains the title and the viewport scaling code -->
     <title>Acadia Park Equipment Company</title> <!--  This is the title. The title controls what characters are seen on the website tab in a browser.  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8"><!-- This is the code that controls the scaling of the webpage. It is particularly helpful for mobile devices  -->
@@ -12,24 +11,24 @@
 </head>
 
 <body>
-    <!--  This is the body. The body contains the clients logo, navigation buttons to the other parts of the website.  -->
     <div class="topnav" id="myTopnav">
-        <a href="#home">Locations</a>
+        <a href=locations.html>Locations</a>
         <a href=shop.html>Shop</a>
-        <a href="#contact">Contact Us</a>
+        <a href=contact-us.html>Contact Us</a>
         <a href=products.html>Products</a>
         <a href="about-us.html">About Us</a>
         <a href=index.html class="active">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()" onclick="hideshow()">
+        <a id="top-nav-toggle" href="javascript:void(0);" class="icon">
             <i class="fa fa-bars"></i>
         </a>
         <div class="navlogo" id="hidelogo">
-        <img src="images/acadia-logo-alternate.png" alt="Acadia Logo">
-    </div>
+            <img src="images/acadia-logo-alternate.png" alt="Acadia Logo">
+        </div>
     </div>
 
     <div class='logo'>
-        <img src="images/acadia-logo.png" alt="Acadia Park Equipment Company">
+        <img class="main-logo" src="images/acadia-logo.png" alt="Acadia Park Equipment Company">
+        <img class="alt-logo" src="images/acadia-logo-alternate.png" alt="Acadia Park Equipment Company">
     </div>
     <div class='container'>
         <!--  This tells the CSS how to style all elements within this element.  -->
@@ -39,7 +38,7 @@
                 <!--  This is used to style header.  -->
                 <p class="no-margin">Your adventure, your world.</p>
             </div>
-        </div><!--  This is a paragraph element. It defigns the beginning and end of sections of text.  -->
+        </div>
     </div>
     <div class="mobile">
     <div class='container'>
@@ -51,24 +50,7 @@
     </div>
         </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-    function hideshow() {
-  var x = document.getElementById("hidelogo");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+<script src="javascript.js"></script>
 </body>
 
 </html>

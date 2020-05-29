@@ -11,9 +11,11 @@ body {
     font-family: 'Lato';
 }
 
+/*This tells the CSS how to style all the fonts in the body.*/
+
 h1 {
     font-family: 'cambria-regular';
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     color: #8A3324;
     margin: 1rem;
 }
@@ -25,9 +27,6 @@ p {
 }
 
 /*This tells the CSS how to style all h1 headings.*/
-
-
-/*This tells the CSS how to style all the fonts in the body.*/
 
 body {
     background-image: url("images/the-road.jpg");
@@ -83,7 +82,7 @@ body {
 .text-block-background-shop {
     width: 100%;
     height: 100%;
-    padding-right: 6rem;
+    padding-right: 0rem;
     padding-left: 6rem;
     background-color: rgba(229, 231, 230, 1);
     border-radius: 0rem;
@@ -117,29 +116,20 @@ body {
     margin: 0rem:
 }
 
-.column {
-    column-count: 3;
-    grid-gap: 20px;
-}
-
-/*This is used to break the text up into 3 columns*/
-
-.text {
-    display: flex;
-    justify-content: center;
-    padding: 0px 15px 0px;
-    font-size: 23px;
-    color: #E5E7E6;
-}
-
-/*This is used to style sections of text. */
-
 .logo {
     display: flex;
     justify-content: center;
 }
 
 /*This is used to position the logo. */
+
+.logo .alt-logo {
+    display: none;
+}
+
+.logo .main-logo {
+    display: block;
+}
 
 .logo img {
     max-width: 100%;
@@ -153,56 +143,6 @@ body {
 
 /*This is used to control the size of the logo. */
 
-.btn-group {
-    display: flex;
-    justify-content: center;
-}
-
-/*This is used to position the navigation buttons. */
-
-.button {
-    background-color: white;
-    border: none;
-    color: #0B9446;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'Klinic Slab Book';
-    cursor: pointer;
-    float: left;
-}
-
-/*This is used to style the navigation buttons. */
-
-.button:hover {
-    background-color: gainsboro;
-}
-
-/*This is used to style the navigation buttons when the mouse moves over each button. */
-
-.active-button {
-    background-color: gainsboro;
-}
-
-/*This is used to style the navigation button of the page that is currently being viewed. */
-
-.home-text {
-    display: flex;
-    justify-content: center;
-
-}
-
-/*This is used to position the text that is displayed on the home page*/
-
-.home-text img {
-    max-width: 100%;
-    align-self: center;
-    width: 570px;
-    padding: 40px;
-}
-
 .topnav {
     overflow: hidden;
     background-color: #4CBB17;
@@ -215,7 +155,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.6rem;
     font-family: 'lato';
 }
 
@@ -238,11 +178,285 @@ body {
     padding-bottom: 0.5rem;
     padding-left: 1.5rem;
     padding-top: 0.5rem;
-    width: 4.2rem;
+    width: 3.8rem;
     height: auto;
 }
 
 .no-margin {
+    margin: 1rem;
+}
+
+.textarea-container {
+    max-width: 820px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.textarea-comment {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.textarea-input {
+    justify-content: center;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+#txtbox {
+    font-size: 18pt;
+    height: 3rem;
+    width: 18rem;
+    margin: 1rem;
+}
+
+#fntsize {
+    font-size: 14pt;
+}
+
+#subbox {
+    font-size: 18pt;
+    height: 3rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.map-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.shop-image {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.shop-image:hover .overlay {
+    opacity: 1;
+}
+
+.add-to-cart {
+    border-radius: 0.5rem;
+    border: 0.1rem solid #4CBB17;
+    background: #4CBB17;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.add-to-cart:hover {
+    background: #E5E7E6;
+}
+
+.container-tan {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-red {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-orange {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-yellow {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-blue {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-green {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-grey {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-tan input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-red input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-orange input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-yellow input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-blue input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-green input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container-grey input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* When the radio button is checked, add a custom background */
+.container-tan input:checked ~ .checkmark {
+  background-color: tan;
+}
+
+.container-red input:checked ~ .checkmark {
+  background-color: red;
+}
+
+.container-orange input:checked ~ .checkmark {
+  background-color: #E9692C;
+}
+
+.container-yellow input:checked ~ .checkmark {
+  background-color: #FFF000;
+}
+
+.container-blue input:checked ~ .checkmark {
+  background-color: #1470fa;
+}
+
+.container-green input:checked ~ .checkmark {
+  background-color: #4CBB17;
+}
+
+.container-grey input:checked ~ .checkmark {
+  background-color: grey;
+  }
+
+.rdo-btn-mrgn-lft {
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.rdo-btn-margin {
     margin: 1rem;
 }
 
@@ -254,6 +468,7 @@ div.gallery {
 
 div.gallery:hover {
     border: 0px solid #777;
+    filter: custom(Add to Cart)
 }
 
 div.gallery img {
@@ -335,6 +550,7 @@ div.desc-shop {
     text-align: center;
     color: #E9692C;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 * {
@@ -345,6 +561,21 @@ div.desc-shop {
     padding: 0 6px;
     float: left;
     width: 34.99999%;
+}
+
+/* Sign up form*/
+.form-wrapper {
+    display: flex;
+    justify-content: center
+}
+
+#sighup .form-group {
+    float: left;
+}
+
+
+#signup .submit {
+    float: right;
 }
 
 @media only screen and (max-width: 5500px) {
@@ -365,12 +596,6 @@ div.desc-shop {
     .responsive-shop {
         width: 100%;
     }
-}
-
-.clearfix-shop:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /*Gallery Shop End*/
@@ -404,31 +629,6 @@ div.desc-shop {
     }
 }
 
-@media only screen and (max-width: 564px) {
-    .logo {
-        display: inline-table;
-        width: 200px;
-        height: auto;
-        content: url("images/acadia-logo-alternate.png");
-        margin-top: 4rem;
-    }
-
-    .navlogo {
-        width: 8rem;
-        height: auto;
-        padding: 0.2rem;
-        content: url(images/acadia-logo.png);
-    }
-
-    .text-block2 {
-        width: 15rem;
-    }
-
-    .header-text {
-        font-size: 1.5rem;
-    }
-}
-
 @media screen and (min-width: 960px) {
     .mobile {
         display: none;
@@ -437,6 +637,11 @@ div.desc-shop {
 
 @media only screen and (max-width: 960px) {
     .text-block-background {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .text-block-background-shop {
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -467,5 +672,40 @@ div.desc-shop {
         margin-right: 0.2rem;
         margin-left: 0.2rem;
         margin-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+
+    .logo img {
+        width: 20rem;
+        height: auto;
+        padding-top: 4rem;
+    }
+
+    .logo .main-logo {
+        display: none;
+    }
+
+    .logo .alt-logo {
+        display: block;
+    }
+
+    .navlogo {
+        width: 8rem;
+        height: auto;
+        content: url(images/acadia-logo.png);
+    }
+
+    .text-block2 {
+        width: 15rem;
+    }
+
+    .header-text {
+        font-size: 1.5rem;
+    }
+    
+    .rdo-btn-mrgn-lft {
+        margin-left: 20%;
     }
 }
