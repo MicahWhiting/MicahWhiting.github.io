@@ -460,6 +460,11 @@ textarea {
     margin: 1rem;
 }
 
+.required
+{
+    color: red;
+}
+
 /*Gallery Products Start*/
 
 div.gallery {
