@@ -34,15 +34,15 @@
                 <h1>Contact Us</h1>
             </div>
             <div class="form-wrapper">
-                <form id="signup" name="signup" method="post" action="acadia-form-processing.html" onsubmit="return !!(validateEmail() & validateFirst() & validateLast());">
-                    <!-- This is a form tag. It contains all the elements of the form. The name, method, and action classes define the name of the form, how to form's data is processed, and where that processing happens. The onsubmit class connects the form to the javascript that ultimately validates the form. -->
+                <form id="signup" name="signup" method="get" action="email.html">
+                    <!-- This is a form tag. It contains all the elements of the form. The name, method, and action classes define the name of the form, how to form's data is processed, and where that processing happens. -->
                     <div class="form-group">
-                        <input type="text" name="emailtext" placeholder="Enter your email address" id="txtbox">
-                        <!-- This is an imput element. Each imput element creates a new piece of the form. Each type class defines what each input is designed to do, and each name class defines the name of each input. Each placeholder and value class defines what text will appear by default within each input element. However, the placeholder class causes the default text to be greyed out, and, when the user types in the text box or area, the default text will disappear. -->
+                        <input type="text" name="emailtext" placeholder="Enter your email address" id="txtbox" required>
+                        <!-- This is an imput element. Each imput element creates a new piece of the form. Each type class defines what each input is designed to do, and each name class defines the name of each input. Each placeholder and value class defines what text will appear by default within each input element. However, the placeholder class causes the default text to be greyed out, and, when the user types in the text box or area, the default text will disappear. The required class will not allow the form to be submitted if no text is found within the the input. -->
                         <span class="required">*</span>
-                        <input type="text" name="firsttext" placeholder="Enter first name here" id="txtbox">
+                        <input type="text" name="fname" placeholder="Enter first name here" id="txtbox" required>
                         <span class="required">*</span>
-                        <input type="text" name="lasttext" placeholder="Enter last name here" id="txtbox">
+                        <input type="text" name="lname" placeholder="Enter last name here" id="txtbox" required>
                         <span class="required">*</span>
                     </div>
                     <div class="form-group">
@@ -50,7 +50,7 @@
                         <!-- The textarea tag creates a large text box within the form. The name class defines the name of the textarea. The rows class defines how many rows the text box has by default, thereby directly controling how tall the text box is when a user loads the page. The col class difines how many columns the text box has, thereby directly controling how wide the text box is when a user loads the page. -->
                     </div>
                     <div class="form-group submit">
-                        <input type="submit" name="mySub" value="Submit" id="subbox">
+                        <input type="submit" value="Submit" id="subbox">
                     </div>
                 </form>
 
@@ -60,6 +60,7 @@
     </div>
 
     <script src="javascript.js"></script>
+    
 </body>
 
 </html>

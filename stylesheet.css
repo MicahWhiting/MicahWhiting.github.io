@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'cambria-regular';
     src: url('fonts/cambria.woff');
-    src: url('fonts/cambria-bold');
+    src: url('fonts/cambria-bold.woff');
 }
 
 font-family: 'Lato',
@@ -15,7 +15,7 @@ body {
 
 h1 {
     font-family: 'cambria-regular';
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     color: #8A3324;
     margin: 1rem;
 }
@@ -89,6 +89,10 @@ body {
     margin-top: 10rem;
 }
 
+.center {
+    margin-right: 6rem;
+}
+
 .header-text {
     display: flex;
     text-align: center;
@@ -103,7 +107,8 @@ body {
     text-align: center;
     justify-content: center;
     color: #000000;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
 
 }
 
@@ -112,8 +117,9 @@ body {
     text-align: center;
     justify-content: center;
     color: #000000;
-    font-size: 2.3rem;
-    margin: 0rem:
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 35%;
 }
 
 .logo {
@@ -192,6 +198,10 @@ body {
     margin-top: 50px;
 }
 
+textarea:focus {
+    outline: solid #4cbb17;
+}
+
 .textarea-comment {
     justify-content: center;
     width: 100%;
@@ -204,7 +214,7 @@ body {
     min-height: 75px;
     outline: none;
     resize: none;
-    border: 1px solid grey;
+    border: 1px solid #4cbb17;
 }
 
 textarea {
@@ -212,17 +222,31 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #4cbb17;
+    padding: 0.5rem;
 }
 
 #txtbox {
-    font-size: 18pt;
+    font-size: 15pt;
     height: 3rem;
     width: 18rem;
     margin: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #4cbb17;
+    padding: 0.5rem;
+}
+
+.input {
+    color: grey;
+}
+
+input:focus {
+    outline: solid #4cbb17;
 }
 
 #fntsize {
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 #subbox {
@@ -231,6 +255,15 @@ textarea {
     width: 10rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    box-shadow: 3px 5px 2px 0 rgba(0, 0, 0, 0.1), 10px 7px 7px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+#subbox:hover {
+    background-color: #e8e8e8;
+    box-shadow: 3px 5px 2px 0 rgba(0, 0, 0, 0.3), 10px 7px 7px 0 rgba(0, 0, 0, 0.3);
 }
 
 .map-center {
@@ -285,171 +318,171 @@ textarea {
 }
 
 .container-tan {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container-red {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container-orange {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container-yellow {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container-blue {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container-green {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container-grey {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Hide the browser's default radio button */
 .container-tan input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .container-red input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .container-orange input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .container-yellow input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .container-blue input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .container-green input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .container-grey input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
 }
 
 /* When the radio button is checked, add a custom background */
 .container-tan input:checked ~ .checkmark {
-  background-color: tan;
+    background-color: tan;
 }
 
 .container-red input:checked ~ .checkmark {
-  background-color: red;
+    background-color: red;
 }
 
 .container-orange input:checked ~ .checkmark {
-  background-color: #E9692C;
+    background-color: #E9692C;
 }
 
 .container-yellow input:checked ~ .checkmark {
-  background-color: #FFF000;
+    background-color: #FFF000;
 }
 
 .container-blue input:checked ~ .checkmark {
-  background-color: #1470fa;
+    background-color: #1470fa;
 }
 
 .container-green input:checked ~ .checkmark {
-  background-color: #4CBB17;
+    background-color: #4CBB17;
 }
 
 .container-grey input:checked ~ .checkmark {
-  background-color: grey;
-  }
+    background-color: grey;
+}
 
 .rdo-btn-mrgn-lft {
     margin-left: 30%;
@@ -460,9 +493,119 @@ textarea {
     margin: 1rem;
 }
 
-.required
-{
+.required {
     color: red;
+}
+
+.text-block-e {
+    max-width: 100rem;
+    min-width: 7rem;
+    padding: 0rem;
+    background-color: rgba(225, 225, 225, 0.5);
+    text-shadow: 4px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0.2rem;
+    margin: 2.7rem;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.1), 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-text-e {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-size: 3.2rem;
+
+}
+
+.logo img {
+    max-width: 100%;
+    align-self: center;
+    width: 600px;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.whitener {
+    color: white;
+    font-size: 3.2rem;
+    text-shadow: 4px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.container-e {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 2.5rem;
+    margin-top: -5rem;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 2.5rem;
+    margin-top: 4rem;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -1.5rem;
+}
+
+.button-e {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 2.3rem/100% Arial,
+        Helvetica,
+        sans-serif;
+    padding: .5em 1em .5em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    border-radius: .1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.blue {
+    color: #d9eef7;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#80aaff), to(#1463ff));
+}
+
+.bar {
+    max-width: 100%;
+    align-self: left;
+    height: 300px;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 825px) {
+    .text-block-e {
+        max-width: 40rem;
+    }
+
+    .header-text-e {
+        font-size: 1.7rem;
+    }
+
+    .whitener {
+        font-size: 1.7rem;
+    }
 }
 
 /*Gallery Products Start*/
@@ -605,7 +748,7 @@ div.desc-shop {
 
 /*Gallery Shop End*/
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 840px) {
     .topnav a {
         display: none;
     }
@@ -650,6 +793,10 @@ div.desc-shop {
         padding-right: 1rem;
         padding-left: 1rem;
     }
+
+    .center {
+        margin-right: 16px;
+    }
 }
 
 @media only screen and (max-width: 875px) {
@@ -663,7 +810,7 @@ div.desc-shop {
         font-size: 1.5rem;
         margin-right: 0.2rem;
         margin-left: 0.2rem;
-        margin-top: 0rem;
+        margin-bottom: 10%;
     }
 
     h1 {
@@ -676,7 +823,7 @@ div.desc-shop {
         font-size: 1.5rem;
         margin-right: 0.2rem;
         margin-left: 0.2rem;
-        margin-top: 0rem;
+        margin-bottom: 10%;
     }
 }
 
@@ -696,11 +843,7 @@ div.desc-shop {
         display: block;
     }
 
-    .navlogo {
-        width: 8rem;
-        height: auto;
-        content: url(images/acadia-logo.png);
-    }
+    #index .navlogo {}
 
     .text-block2 {
         width: 15rem;
@@ -709,7 +852,7 @@ div.desc-shop {
     .header-text {
         font-size: 1.5rem;
     }
-    
+
     .rdo-btn-mrgn-lft {
         margin-left: 20%;
     }

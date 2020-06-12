@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Acadia Park Equipment Company</title> <!--  This is the title. The title controls what characters are seen on the website tab in a browser.  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- This is the code that controls the scaling of the webpage. It is particularly helpful for mobile devices  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('images/jordan-mcqueen-ido_zlFUFlc-unsplash2.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            max-width: 100%;
+            height: auto;
+            margin: 0rem;
+        }
+        
+        @media only screen and (max-width: 1466px) {
+            body {
+                background-image: url('images/jordan-mcqueen-ido_zlFUFlc-unsplash3.jpg');
+            }
+        }
+        
+        @media only screen and (max-width: 1142px) {
+            body {
+                background-image: url('images/jordan-mcqueen-ido_zlFUFlc-unsplash.jpg');
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            .logo .main-logo {
+                display: block;
+            }
+
+            .logo .alt-logo {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--   <img class="bar" src="images/left.png" alt="Acadia Park Equipment Company"> -->
+
+    <div class='logo'>
+        <img class="main-logo" src="images/acadia-logo.png" alt="Acadia Park Equipment Company">
+    </div>
+    <div class='container-e'>
+        <!--  This tells the CSS how to style all elements within this element.  -->
+        <div class='text-block-e'>
+            <!--  This tells the CSS to put a semi-transparent, white box with a shadow behind anything inside this style element.  -->
+            <div class='header-text-e'>
+                <!--  This is used to style header.  -->
+                <p class="no-margin">Thanks for signing up <span id="fname"></span>!</p>
+            </div>
+        </div>
+    </div>
+    <div class='container-e'>
+        <!--  This tells the CSS how to style all elements within this element.  -->
+        <div class='text-block-e'>
+            <!--  This tells the CSS to put a semi-transparent, white box with a shadow behind anything inside this style element.  -->
+            <div class='header-text-e'>
+                <!--  This is used to style header.  -->
+                <p class="no-margin">Stock up for your next adventure</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <p class="whitener">Return to our website</p>
+    </div>
+    <div class="container3">
+        <img src="images/down-arrow.png">
+    </div>
+    <div class="container3">
+        <a href="shop.html" class="button-e blue">Click here!</a>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
