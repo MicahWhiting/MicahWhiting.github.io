@@ -172,6 +172,7 @@ body {
 
 .side-padding {
     background-color: #EDEDED;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .side-padding-contact {
@@ -183,7 +184,8 @@ body {
 .side-padding-suite {
     background-color: #EDEDED;
     width: 100%;
-    height: calc(66.5vh - 50px);
+    height: calc(66.5vh - 2px);
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .navbar-dark .navbar-brand {
@@ -436,6 +438,7 @@ div.gallery {
     background-color: #e6e6e6;
     border-radius: 0px 0px 25px 25px;
     border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.gallery:hover {
